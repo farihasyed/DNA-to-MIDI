@@ -139,7 +139,7 @@ def start(genome, key, scale):
 
 
 def surprise_me():
-    genome = randrange(1, len(GENOMES) - 1, 1)
+    genome = randrange(1, len(GENOMES) - 2, 1)
     key = randrange(0, len(KEYS_DICTIONARY) - 1, 1)
     scale = randrange(0, len(SCALES) - 1, 1)
     return GENOMES[genome][0], list(KEYS_DICTIONARY.keys())[key], SCALES[scale]
